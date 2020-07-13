@@ -1,0 +1,29 @@
+[1mdiff --git a/pom.xml b/pom.xml[m
+[1mindex 4105a83..fb83328 100644[m
+[1m--- a/pom.xml[m
+[1m+++ b/pom.xml[m
+[36m@@ -3,4 +3,9 @@[m
+   <groupId>BurakColak</groupId>[m
+   <artifactId>testTest</artifactId>[m
+   <version>0.0.1-SNAPSHOT</version>[m
+[31m-</project>[m
+\ No newline at end of file[m
+[32m+[m[32m   <properties>[m
+[32m+[m[32m    <maven.compiler.source>1.8</maven.compiler.source>[m
+[32m+[m[32m    <maven.compiler.target>1.8</maven.compiler.target>[m
+[32m+[m[32m  </properties>[m
+[32m+[m[32m</project>[m
+[41m+ [m
+[1mdiff --git a/src/main/java/testTest/GUITest.java b/src/main/java/testTest/GUITest.java[m
+[1mindex 8171fdc..21fb3ae 100644[m
+[1m--- a/src/main/java/testTest/GUITest.java[m
+[1m+++ b/src/main/java/testTest/GUITest.java[m
+[36m@@ -34,7 +34,7 @@[m [mpublic class GUITest extends JFrame implements ActionListener{[m
+ 	public void actionPerformed(ActionEvent e) {[m
+ 		if(e.getSource()==b1) {[m
+ 			[m
+[31m-			pa1.repaint();[m
+[32m+[m			[32mrepaint();[m
+ 		}if(e.getSource()==b2) {[m
+ 			Color c= JColorChooser.showDialog(null, "Wähle eine Farbe", Color.RED);[m
+ 			b1.setBackground(c);[m
