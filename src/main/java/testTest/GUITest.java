@@ -34,7 +34,7 @@ public class GUITest extends JFrame implements ActionListener{
 	public void actionPerformed(ActionEvent e) {
 		if(e.getSource()==b1) {
 			
-			pa1.repaint();
+			repaint();
 		}if(e.getSource()==b2) {
 			Color c= JColorChooser.showDialog(null, "Wähle eine Farbe", Color.RED);
 			b1.setBackground(c);
